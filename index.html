@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ar-Shakir Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- SIDEBAR LEFT -->
+      <div class="sidebar-l">
+        <div class="status-circles">
+          <div class="status-circle red"></div>
+          <div class="status-circle yellow"></div>
+          <div class="status-circle green"></div>
+        </div>
+        <div class="avatar-details">
+          <div class="avatar"></div>
+          <div class="details">
+            <h2 class="font-small">Ar-Shakir</h2>
+            <p class="font-small">Sr Visual Designer</p>
+          </div>
+        </div>
+        <div class="menu margin-bottom-3">
+          <h4 class="margin-bottom-1">Menu</h4>
+          <ul class="menu-links list-style-none flex-col">
+            <li class="menu-item">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M9 12l2 2 4-4" />
+                <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3" />
+                <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3" />
+                <path
+                  d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4l2 3h9a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9z"
+                />
+              </svg>
+              My Tasks
+            </li>
+            <li class="menu-item">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+              Inbox
+            </li>
+            <li class="menu-item">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2v11z"
+                />
+              </svg>
+              Projects
+            </li>
+            <li class="menu-item">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 1v6m0 6v6" />
+                <path d="M1 12h6m6 0h6" />
+              </svg>
+              Standups
+            </li>
+            <li class="menu-item">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M8 2v4" />
+                <path d="M16 2v4" />
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <path d="M3 10h18" />
+              </svg>
+              Meetings
+            </li>
+            <li class="menu-item">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                />
+              </svg>
+              Settings
+            </li>
+          </ul>
+        </div>
+
+        <div class="favorites margin-bottom-3">
+          <h4 class="margin-bottom-1">Favorites</h4>
+          <ul class="favorites-list list-style-none flex-col">
+            <li class="menu-item">
+              <div class="color-circle red"></div>
+              Redwhale Design
+            </li>
+            <li class="menu-item">
+              <div class="color-circle blue"></div>
+              Mobile App Mockup
+            </li>
+            <li class="menu-item">
+              <div class="color-circle green"></div>
+              UI Design Revision
+            </li>
+          </ul>
+        </div>
+
+        <div class="plus-icon">
+          <span>+</span>
+        </div>
+
+        <div class="margin-top-1 font-small">
+          <p>2021 AR Shakir License</p>
+        </div>
+      </div>
+      <!-- end of sidebar l -->
+      <!-- MAIN CONTENT -->
+      <div class="content">
+        <div class="flex justify-between margin-bottom-3">
+          <h2>Hi Shakir!</h2>
+          <div class="flex">
+            <p class="font-small progress-text">15% tasks completed</p>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div class="card-container margin-bottom-3">
+          <div class="card-1">
+            <p class="text-white margin-bottom-1">Icon in a flexbox</p>
+            <h3 class="text-white margin-bottom-1">
+              R & D For The New Banking Mobile App
+            </h3>
+            <div class="card-images">
+              <img src="/img/customer-1.jpg" alt="customer-1" />
+              <img src="/img/customer-2.jpg" alt="customer-2" />
+              <img src="/img/customer-3.jpg" alt="customer-3" />
+            </div>
+          </div>
+          <div class="card-2">
+            <p class="text-white margin-bottom-1">Icon in a flexbox</p>
+            <h3 class="text-white margin-bottom-1">
+              Create Sign Up <br />
+              Page
+            </h3>
+            <div class="card-images">
+              <img src="/img/customer-1.jpg" alt="customer-1" />
+              <img src="/img/customer-2.jpg" alt="customer-2" />
+              <img src="/img/customer-3.jpg" alt="customer-3" />
+            </div>
+          </div>
+        </div>
+
+        <!-- MONTHLY TASKS -->
+        <div class="flex justify-between margin-bottom-3">
+          <div><h3>Monthly Tasks</h3></div>
+          <div class="flex">
+            <button class="btn btn-primary">Archive</button>
+            <div class="margin-left-1">
+              <button class="btn btn-secondary">New</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="active-tasks margin-bottom-3">
+          <div class="flex">
+            <h4 class="active-task">Active Tasks</h4>
+            <h4>Completed</h4>
+          </div>
+          <div><h5>Search</h5></div>
+        </div>
+
+        <div class="today margin-bottom-3">
+          <h4 class="margin-bottom-1">Today</h4>
+          <div class="today-body">
+            <div class="today-body-left">
+              <div class="today-icon-box-1"></div>
+              <div>
+                <h5>Uber</h5>
+                <p>App design and upgrades with new features</p>
+              </div>
+            </div>
+
+            <div class="card-images">
+              <img src="/img/customer-1.jpg" alt="customer-1" />
+              <img src="/img/customer-2.jpg" alt="customer-2" />
+              <img src="/img/customer-3.jpg" alt="customer-3" />
+            </div>
+          </div>
+          <div class="today-body">
+            <div class="today-body-left">
+              <div class="today-icon-box-2"></div>
+              <div>
+                <h5>Uber</h5>
+                <p>App design and upgrades with new features</p>
+              </div>
+            </div>
+
+            <div class="card-images">
+              <img src="/img/customer-1.jpg" alt="customer-1" />
+              <img src="/img/customer-2.jpg" alt="customer-2" />
+              <img src="/img/customer-3.jpg" alt="customer-3" />
+            </div>
+          </div>
+          <div class="today-body">
+            <div class="today-body-left">
+              <div class="today-icon-box-3"></div>
+              <div>
+                <h5>Uber</h5>
+                <p>App design and upgrades with new features</p>
+              </div>
+            </div>
+
+            <div class="card-images">
+              <img src="/img/customer-1.jpg" alt="customer-1" />
+              <img src="/img/customer-2.jpg" alt="customer-2" />
+              <img src="/img/customer-3.jpg" alt="customer-3" />
+            </div>
+          </div>
+        </div>
+
+        <div class="tomorrow">
+          <h4 class="margin-bottom-3">Tomorrow</h4>
+
+          <div class="today-body-remove-margin">
+            <div class="today-body-left">
+              <div class="today-icon-box-4"></div>
+              <div>
+                <h5>Uber</h5>
+                <p>App design and upgrades with new features</p>
+              </div>
+            </div>
+
+            <div class="card-images">
+              <img src="/img/customer-1.jpg" alt="customer-1" />
+              <img src="/img/customer-2.jpg" alt="customer-2" />
+              <img src="/img/customer-3.jpg" alt="customer-3" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of content -->
+      <!-- sidebar r -->
+      <div class="sidebar-r">
+        <div class="flex justify-between margin-bottom-3">
+          <h2>Today's Schedule</h2>
+          <div>Calendar Icon</div>
+        </div>
+        <div>
+          <div>
+            <p>30 minutes of calls with client</p>
+            <h5>Project Discovery Call</h5>
+          </div>
+          <div>Icon</div>
+        </div>
+      </div>
+      <!-- end of sidebar r -->
+    </div>
+  </body>
+</html>
