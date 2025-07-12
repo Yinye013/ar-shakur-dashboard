@@ -274,14 +274,117 @@
       <div class="sidebar-r">
         <div class="flex justify-between margin-bottom-3">
           <h2>Today's Schedule</h2>
-          <div>Calendar Icon</div>
+          <div class="calendar-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              width="24"
+              height="24"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
         </div>
-        <div>
+        <div class="flex justify-between">
           <div>
-            <p>30 minutes of calls with client</p>
+            <p class="thirty-minutes">30 minutes of calls with client</p>
             <h5>Project Discovery Call</h5>
           </div>
-          <div>Icon</div>
+          <div class="invite"><span>+</span> Invite</div>
+        </div>
+
+        <div class="green-long-div"></div>
+
+        <!-- gray line -->
+        <div class="gray-line"></div>
+
+        <div class="flex justify-between">
+          <div>
+            <p style="font-weight: bold">Design Project</p>
+            <p style="font-size: 14px">In progress</p>
+          </div>
+          <div style="font-weight: bold; color: #dee2e6">..</div>
+        </div>
+
+        <!--  -->
+        <div class="schedule__status">
+          <div class="schedule__status--completed">
+            <h5>Completed</h5>
+            <p>114</p>
+          </div>
+
+          <div class="schedule__status--in-progress">
+            <h5>In Progress</h5>
+            <p>32</p>
+          </div>
+
+          <div class="schedule__status--team">
+            <h5>Team members</h5>
+            <div class="card-images">
+              <img src="/img/customer-1.jpg" alt="customer-1" />
+              <img src="/img/customer-2.jpg" alt="customer-2" />
+              <img src="/img/customer-3.jpg" alt="customer-3" />
+            </div>
+          </div>
+        </div>
+
+        <!-- gray line -->
+        <div class="gray-line"></div>
+
+        <!--  -->
+        <div class="flex justify-between">
+          <div>
+            <p style="font-weight: bold">New Task</p>
+            <p style="font-size: 12px">Task Title</p>
+          </div>
+          <div style="font-weight: bold; color: #dee2e6">..</div>
+        </div>
+
+        <div>
+          <input type="text" placeholder="Create new" class="task-input" />
+        </div>
+
+        <!-- let's add a carousel of emojis here -->
+        <div class="emoji-carousel">
+          <span style="color: #fe047b; font-weight: bold"><</span>
+          <div class="emoji">😀</div>
+          <div class="emoji">😃</div>
+          <div class="emoji">😄</div>
+          <div class="emoji">😁</div>
+          <div class="emoji">😆</div>
+          <div class="emoji">😅</div>
+          <div class="emoji">😂</div>
+          <div class="emoji">🤣</div>
+          <span style="color: #fe047b; font-weight: bold">></span>
+        </div>
+
+        <!-- gray line -->
+        <div class="gray-line"></div>
+
+        <div>
+          <p style="font-size: 12px">Add collaborators</p>
+
+          <div class="collaborators">
+            <div class="collaborator-capsule-1">
+              <img src="/img/customer-1.jpg" alt="customer-1" />
+              <span class="collaborator-name-1">Angela</span>
+              <span>x</span>
+            </div>
+
+            <div class="collaborator-capsule-2">
+              <img src="/img/customer-2.jpg" alt="customer-1" />
+              <span class="collaborator-name-2">Chris</span>
+              <span>x</span>
+            </div>
+
+            <div class="collaborator-add"><span>+</span></div>
+            <div class="collaborator-next"><span>></span></div>
+          </div>
         </div>
       </div>
       <!-- end of sidebar r -->

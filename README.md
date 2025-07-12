@@ -85,7 +85,7 @@ Potential areas for further development:
 
 ## Credits
 
-- Design inspiration: AR Shakir
+- Design inspiration: Dribbble
 - Font: Mona Sans (Google Fonts)
 
 ## License
