@@ -8,9 +8,61 @@
 
 body {
   font-family: "Mona Sans", sans-serif;
-  background-color: #dce0e7;
+  background: linear-gradient(to bottom, #dce0e7, #cfd0d1);
   color: #333;
-  padding: 2rem;
+  padding: 7rem 2rem;
+  position: relative;
+}
+
+.top-gray-circle {
+  position: absolute;
+  top: -110px;
+  left: -110px;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  background-color: #cfd3da;
+}
+
+.top-circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  pointer-events: none;
+  z-index: 10;
+}
+.top-circle-green {
+  position: absolute;
+  left: 2vw;
+  top: 5vw;
+  left: 150px;
+  width: 20px;
+  height: 20px;
+  background: #00d7a1;
+  border-radius: 50%;
+  box-shadow: 0 4px 24px rgba(0, 215, 161, 0.15);
+}
+.top-circle-purple {
+  position: absolute;
+  right: 2vw;
+  right: 150px;
+  top: 40px;
+  width: 40px;
+  height: 40px;
+  background: #5a2ce8;
+  border-radius: 50%;
+  box-shadow: 0 4px 32px rgba(90, 44, 232, 0.15);
+}
+
+.bottom-circle {
+  position: absolute;
+  bottom: 50px;
+  right: 40vw;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  background-color: #fe047b;
 }
 
 /* UTILITY CLASSES */
@@ -54,6 +106,10 @@ body {
 
 .font-large {
   font-size: 1.25rem;
+}
+
+.relative {
+  position: relative;
 }
 
 .flex {
@@ -113,7 +169,6 @@ body {
 }
 
 /* END OF UTILITY CLASSES */
-
 .menu-item {
   display: flex;
   align-items: center;
@@ -129,8 +184,7 @@ body {
 }
 
 .icon {
-  width: 18px;
-  height: 18px;
+  font-size: 18px;
   color: #6c757d;
   flex-shrink: 0;
 }
@@ -195,6 +249,7 @@ body {
   display: grid;
   grid-template-columns: 0.8fr 2fr 0.8fr;
 }
+
 .sidebar-l {
   padding: 1rem;
   background-color: #f8f9fa;
@@ -202,7 +257,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 }
 .avatar-details {
   display: flex;
@@ -217,8 +272,13 @@ body {
   border-radius: 100%;
   margin-bottom: 1rem;
   background-color: #fe047b;
+  box-shadow: 0 4px 32px rgba(254, 4, 123, 0.5);
 }
-
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .plus-icon {
   width: 50px;
   height: 50px;
@@ -237,14 +297,14 @@ body {
 }
 
 .sidebar-r {
-  padding: 1rem;
+  padding: 1rem 2rem;
   background-color: #f8f9fa;
   border-left: 1px solid #dee2e6;
 }
 .progress-bar {
   width: 120px;
   height: 7px;
-  background-color: #e9ecef;
+  background-color: #d2d8de;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -258,7 +318,7 @@ body {
 
 .card-container {
   display: grid;
-  grid-template-columns: 1.7fr 2fr;
+  grid-template-columns: 1.5fr 2fr;
   gap: 1rem;
 }
 
@@ -266,15 +326,22 @@ body {
   background: linear-gradient(to top right, #ef4770, #f26d8c);
   padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(239, 71, 112, 0.2);
+  box-shadow: 0 4px 8px rgba(239, 71, 112, 0.4);
 }
 
 .card-2 {
   background: linear-gradient(to bottom left, #ab98ee, #bfa7ea);
   padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 16px rgba(90, 44, 232, 0.25);
+  box-shadow: 0 4px 16px rgba(90, 44, 232, 0.4);
 }
+
+.icon-wrapper {
+  padding: 2px 5px;
+  background-color: #00000020;
+  border-radius: 25%;
+}
+
 .card-images {
   display: flex;
 }
@@ -388,12 +455,15 @@ body {
   font-size: 12px;
 }
 .green-long-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  height: 80px; /*will remove this later*/
+  padding: 20px 16px;
   background-color: #00d7a1;
   border-radius: 5px;
   margin-top: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 215, 161, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 215, 161, 0.5);
 }
 
 .gray-line {
@@ -409,11 +479,28 @@ body {
   align-items: center;
 }
 
-.calendar-icon svg {
-  width: 20px;
-  height: 20px;
+.calendar-icon i {
+  font-size: 20px;
 }
 
+.notification-1 {
+  width: 6px;
+  height: 6px;
+  background-color: #00d7a1;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 52%;
+}
+.notification-2 {
+  width: 6px;
+  height: 6px;
+  background-color: #fe047b;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 60%;
+}
 .schedule__status {
   display: flex;
   justify-content: space-between;
@@ -428,7 +515,7 @@ body {
 .schedule__status--team {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 0.5;
 }
 
 .schedule__status h5 {
