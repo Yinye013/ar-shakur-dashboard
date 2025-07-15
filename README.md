@@ -73,16 +73,6 @@ The dashboard incorporates several modern design elements:
 2. Open `index.html` in your web browser
 3. No build process or dependencies required - it's a pure HTML/CSS project
 
-## Future Enhancements
-
-Potential areas for further development:
-
-- JavaScript functionality for interactive features
-- Dark mode toggle
-- Responsive design for mobile devices
-- Additional dashboard views and widgets
-- Backend integration for functional task management
-
 ## Credits
 
 - Design inspiration: Dribbble
