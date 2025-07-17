@@ -10,10 +10,9 @@
     <meta name="theme-color" content="#fe047b" />
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Ar-Shakir Dashboard</title>
   </head>
   <body>
@@ -34,7 +33,9 @@
           <div class="status-circle green"></div>
         </div>
         <div class="avatar-details">
-          <div class="avatar"></div>
+          <div class="avatar">
+            <i class="fa-solid fa-user-tie text-white"></i>
+          </div>
           <div class="details">
             <h2 class="font-small">Ar-Shakir</h2>
             <p class="font-small">Sr Visual Designer</p>
@@ -44,28 +45,28 @@
           <h4 class="margin-bottom-1">Menu</h4>
           <ul class="menu-links list-style-none flex-col text-gray">
             <li class="menu-item">
-              <i class="ph ph-check-square icon"></i>
+              <i class="fa-solid fa-square-check icon"></i>
               My Tasks
             </li>
             <li class="menu-item active">
-              <i class="ph ph-file icon"></i>
+              <i class="fa-solid fa-inbox icon"></i>
               Inbox
             </li>
             <li class="menu-item">
-              <i class="ph ph-folder icon"></i>
+              <i class="fa-solid fa-folder icon"></i>
               Projects
             </li>
             <li class="menu-item">
-              <i class="ph ph-circles-four icon"></i>
+              <i class="fa-solid fa-object-group icon"></i>
               Standups
             </li>
             <li class="menu-item">
-              <i class="ph ph-calendar icon"></i>
+              <i class="fa-solid fa-calendar icon"></i>
               Meetings
               <span class="notification-tag">5</span>
             </li>
             <li class="menu-item">
-              <i class="ph ph-gear icon"></i>
+              <i class="fa-solid fa-gear icon"></i>
               Settings
             </li>
           </ul>
@@ -90,7 +91,7 @@
         </div>
 
         <div class="plus-icon">
-          <i class="ph ph-plus"></i>
+          <i class="fa-solid fa-plus"></i>
         </div>
 
         <div class="margin-top-1 font-small">
@@ -115,7 +116,7 @@
           <div class="card-1">
             <div class="text-white flex justify-between margin-bottom-1">
               <div class="icon-wrapper">
-                <i class="ph ph-lightbulb text-white"></i>
+                <i class="fa-solid fa-lightbulb text-white"></i>
               </div>
 
               <span class="text-white text-bold">...</span>
@@ -132,7 +133,7 @@
           <div class="card-2">
             <div class="text-white flex justify-between margin-bottom-1">
               <div class="icon-wrapper">
-                <i class="ph ph-key text-white"></i>
+                <i class="fa-solid fa-key text-white"></i>
               </div>
             </div>
             <h3 class="text-white margin-bottom-1">
@@ -154,7 +155,7 @@
             <button class="btn btn-primary">Archive</button>
             <div class="margin-left-1">
               <button class="btn btn-secondary">
-                <i class="ph ph-plus"></i>
+                <i class="fa-solid fa-plus"></i>
                 New
               </button>
             </div>
@@ -167,7 +168,7 @@
             <h4>Completed</h4>
           </div>
           <div class="flex justify-between text-gray">
-            <i class="ph ph-magnifying-glass icon text-gray"></i>
+            <i class="fa-solid fa-magnifying-glass icon text-gray"></i>
             <h5>Search</h5>
           </div>
         </div>
@@ -176,7 +177,9 @@
           <h4 class="margin-bottom-1">Today</h4>
           <div class="today-body">
             <div class="today-body-left">
-              <div class="today-icon-box-1"></div>
+              <div class="today-icon-box-1">
+                <i class="fa-brands fa-uber text-white"></i>
+              </div>
               <div>
                 <h5>Uber</h5>
                 <p class="text-gray">
@@ -193,7 +196,9 @@
           </div>
           <div class="today-body">
             <div class="today-body-left">
-              <div class="today-icon-box-2"></div>
+              <div class="today-icon-box-2">
+                <i class="fa-brands fa-facebook-f text-white"></i>
+              </div>
               <div>
                 <h5>Facebook Ads</h5>
                 <p class="text-gray">Facebook ads design for CreativeCloud</p>
@@ -207,7 +212,13 @@
           </div>
           <div class="today-body">
             <div class="today-body-left">
-              <div class="today-icon-box-3"></div>
+              <div class="today-icon-box-3">
+                <span
+                  class="text-white"
+                  style="font-weight: bold; font-size: 20px"
+                  >P</span
+                >
+              </div>
               <div>
                 <h5>Payoneer</h5>
                 <p class="text-gray">Payoneer Dashboard Design</p>
@@ -227,7 +238,13 @@
 
           <div class="today-body-remove-margin">
             <div class="today-body-left">
-              <div class="today-icon-box-4"></div>
+              <div class="today-icon-box-4">
+                <span
+                  class="text-white"
+                  style="font-weight: bold; font-size: 20px"
+                  >U</span
+                >
+              </div>
               <div>
                 <h5>Upwork</h5>
                 <p class="text-gray">
@@ -249,7 +266,7 @@
         <div class="flex justify-between margin-bottom-3">
           <h2>Today's Schedule</h2>
           <div class="calendar-icon">
-            <i class="ph ph-calendar"></i>
+            <i class="fa-solid fa-calendar"></i>
           </div>
         </div>
         <div class="flex justify-between">
@@ -269,9 +286,11 @@
 
           <p class="text-white">28:35</p>
 
-          <div class="flex justify-between">
-            <p class="text-white"><i class="ph ph-phone-disconnect"></i></p>
-            <p class="text-white"><i class="ph ph-dots-three-vertical"></i></p>
+          <div style="gap: 0.8rem" class="flex justify-between">
+            <p class="text-white"><i class="fa-solid fa-phone-slash"></i></p>
+            <p class="text-white">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </p>
           </div>
         </div>
 
@@ -282,12 +301,12 @@
           <div>
             <p style="font-weight: bold">Design Project</p>
             <p style="font-size: 14px" class="flex">
-              <i class="ph ph-flame"></i> In progress
+              <i style="margin-right: 8px" class="fa-solid fa-fire"></i> In
+              progress
             </p>
           </div>
           <div style="font-weight: bold; color: #dee2e6">..</div>
         </div>
-
         <!--  -->
         <div class="schedule__status">
           <div class="schedule__status--completed">
@@ -335,7 +354,7 @@
 
         <!-- let's add a carousel of emojis here -->
         <div class="emoji-carousel">
-          <i style="color: #fe047b" class="ph ph-less-than"></i>
+          <i style="color: #fe047b" class="fa-solid fa-chevron-left"></i>
           <div class="emoji">😀</div>
           <div class="emoji">😃</div>
           <div class="emoji">😄</div>
@@ -344,7 +363,10 @@
           <div class="emoji">😅</div>
           <div class="emoji">😂</div>
           <div class="emoji">🤣</div>
-          <i style="color: #fe047b" class="ph ph-greater-than text-white"></i>
+          <i
+            style="color: #fe047b"
+            class="fa-solid fa-chevron-right text-white"
+          ></i>
         </div>
 
         <!-- gray line -->
@@ -359,23 +381,25 @@
             <div class="collaborator-capsule-1">
               <img src="/img/customer-1.jpg" alt="customer-1" />
               <span class="collaborator-name-1">Angela</span>
-              <i class="ph ph-x"></i>
+              <i class="fa-solid fa-xmark"></i>
             </div>
 
             <div class="collaborator-capsule-2">
               <img src="/img/customer-2.jpg" alt="customer-1" />
               <span class="collaborator-name-2">Chris</span>
-              <i class="ph ph-x"></i>
+              <i class="fa-solid fa-xmark"></i>
             </div>
 
-            <div class="collaborator-add"><i class="ph ph-plus"></i></div>
+            <div class="collaborator-add"><i class="fa-solid fa-plus"></i></div>
             <div class="collaborator-next">
-              <i class="ph ph-greater-than text-white"></i>
+              <i class="fa-solid fa-chevron-right text-white"></i>
             </div>
           </div>
         </div>
       </div>
       <!-- end of sidebar r -->
     </div>
+
+    <script src="script.js" />
   </body>
 </html>

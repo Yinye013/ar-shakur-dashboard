@@ -25,7 +25,7 @@ The AR Shakir Dashboard is a beautiful, clean user interface for task management
   - Tab navigation between active and completed tasks
 - **Visual Elements**:
   - Gradient background cards
-  - SVG icons for navigation
+  - Font Awesome icons for navigation and UI elements
   - User avatars
   - Color indicators for project categories
 
@@ -40,6 +40,8 @@ The AR Shakir Dashboard is a beautiful, clean user interface for task management
   - Google Fonts integration (Mona Sans)
   - Gradient backgrounds
   - Glassmorphism effects
+  - Responsive design with media queries
+  - Print styles optimization
 
 ## Project Structure
 
@@ -77,7 +79,5 @@ The dashboard incorporates several modern design elements:
 
 - Design inspiration: Dribbble
 - Font: Mona Sans (Google Fonts)
-
-## License
-
-2021 AR Shakir License
+- Icons: Font Awesome 6.4.0
+- Print styling uses `break-inside: avoid` for optimal content display

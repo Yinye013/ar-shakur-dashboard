@@ -10,7 +10,7 @@ body {
   font-family: "Mona Sans", sans-serif;
   background: linear-gradient(to bottom, #dce0e7, #cfd0d1);
   color: #333;
-  padding: 7rem 2rem;
+  padding: 7rem 4rem;
   position: relative;
 }
 
@@ -36,7 +36,7 @@ body {
   position: absolute;
   left: 2vw;
   top: 5vw;
-  left: 150px;
+  left: 220px;
   width: 20px;
   height: 20px;
   background: #00d7a1;
@@ -46,7 +46,7 @@ body {
 .top-circle-purple {
   position: absolute;
   right: 2vw;
-  right: 150px;
+  right: 200px;
   top: 40px;
   width: 40px;
   height: 40px;
@@ -184,6 +184,9 @@ body {
   font-size: 18px;
   color: #6c757d;
   flex-shrink: 0;
+  width: auto;
+  height: auto;
+  display: inline-block;
 }
 
 .menu-item:hover .icon {
@@ -282,16 +285,24 @@ body {
   width: 5px;
   height: 50px;
   background-color: #fe047b;
-  border-radius: 2px;
+  border-radius: 0px 4px 4px 0px;
 }
 .avatar {
   width: 50px;
   height: 50px;
   border-radius: 100%;
   margin-bottom: 1rem;
+  margin-top: 15px;
   background-color: #fe047b;
   box-shadow: 0 4px 32px rgba(254, 4, 123, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.avatar i {
+  font-size: 20px;
+}
+
 .details {
   display: flex;
   flex-direction: column;
@@ -390,6 +401,8 @@ body {
 .active-tasks h4 {
   margin-right: 1rem;
   padding-bottom: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
 }
 
 .today-body {
@@ -415,6 +428,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.today-icon-box-1 i {
+  font-size: 24px;
+}
 .today-icon-box-2 {
   width: 50px;
   height: 50px;
@@ -423,6 +439,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.today-icon-box-2 i {
+  font-size: 22px;
 }
 .today-icon-box-3 {
   width: 50px;
